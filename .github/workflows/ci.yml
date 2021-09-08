@@ -28,7 +28,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Build and push
-      uses: docker/build-push-action@v2
+      uses: docker/build-push-action@v2.7.0
       with:
           image: docker-hub-repo/image-name
           registry: docker.io
